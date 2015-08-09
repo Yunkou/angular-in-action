@@ -1,2 +1,1 @@
-# angular-in-action
-angular-in-action
+#AngularJS-In-Action

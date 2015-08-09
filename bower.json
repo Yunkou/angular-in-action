@@ -1,0 +1,19 @@
+{
+  "name": "AngularJS-In-Action",
+  "version": "0.0.0",
+  "authors": [
+    "寇云 <koopking@gmail.com>"
+  ],
+  "description": "angularJs",
+  "keywords": [
+    "ng"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
