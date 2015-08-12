@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+</head>
+<body ng-app="app">
+    <div ng-controller="MyCtrl">
+        <h1 ng-bind="name"></h1>
+        <h1 ng-bind="http"></h1>
+    </div>
+<script src="../../bower_components/angular/angular.min.js"></script>
+<script>
+    angular.module('app', [])
+        .value('ReName', '赵四儿')
+        .constant('http', 'www.baidu.com')
+        .factory('Data', function(){
+            return "nihaoshijie"
+        })
+        .controller('MyCtrl', function($scope, ReName, http, Data){
+            $scope.name = ReName;
+            $scope.http = Data;
+        });
+</script>
+</body>
+</html>
