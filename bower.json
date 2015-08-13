@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "flat-ui": "~2.2.2"
+    "flat-ui": "~2.2.2",
+    "underscore": "~1.8.3"
   }
 }
