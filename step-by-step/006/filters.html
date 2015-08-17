@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filters</title>
+    <link rel="stylesheet" href="../../bower_components/materialize/dist/css/materialize.min.css">
+</head>
+
+<body class="row" ng-app="myApp">
+    
+    <div class="col l4 offset-l4 " ng-controller="FirstCtrl as first">
+        <input type="text" ng-model="first.data.message">
+        <blockquote>
+            {{first.data.message}}
+        </blockquote>
+    </div>
+
+    <div class="col l4 offset-l4 " ng-controller="SecondCtrl as second">
+        <input type="text" ng-model="second.data.message">
+        <blockquote>
+            {{second.data.message|reverse}}
+        </blockquote>
+    </div>
+
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
